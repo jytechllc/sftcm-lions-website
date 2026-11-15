@@ -12,16 +12,16 @@ export function AccountMenu({ lang }: { lang: Lang }) {
 
   if (user) {
     return (
-      <a href={memberPath(lang)} className="max-w-32 truncate text-slate-700 hover:text-lions-navy">
+      <a href={memberPath(lang)} className="max-w-24 truncate whitespace-nowrap text-slate-700 sm:max-w-32 hover:text-lions-navy">
         {user.name ?? user.email ?? t.member}
       </a>
     );
   }
 
   return (
-    <span className="flex items-center gap-3">
-      <a href={loginHref(lang)} className="text-slate-700 hover:text-lions-navy">{t.login}</a>
-      <a href={signupHref(lang)} className="rounded-full bg-lions-navy px-3 py-1 font-medium text-white hover:brightness-110">{t.signup}</a>
+    <span className="flex items-center gap-2 whitespace-nowrap sm:gap-3">
+      <a href={loginHref(lang)} className="whitespace-nowrap text-slate-700 hover:text-lions-navy">{t.login}</a>
+      <a href={signupHref(lang)} className="whitespace-nowrap rounded-full bg-lions-navy px-3 py-1 font-medium text-white hover:brightness-110">{t.signup}</a>
     </span>
   );
 }

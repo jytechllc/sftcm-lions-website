@@ -23,14 +23,14 @@ export function Header({ lang, onHome = true }: { lang: Lang; onHome?: boolean }
             {lang === "zh" ? "旧金山世界中医药总会狮子会" : "SF Global Chinese Medicine Lions"}
           </span>
         </a>
-        <nav className="flex items-center gap-4 text-sm">
+        <nav className="flex shrink-0 items-center gap-3 text-sm sm:gap-4">
           <div className="hidden gap-5 md:flex">
             {links.map(([href, label]) => (
               <a key={href} href={`${onHome ? "" : home}${href}`} className="text-slate-600 hover:text-lions-navy">{label}</a>
             ))}
           </div>
           <AccountMenu lang={lang} />
-          <a href={langHref} className="rounded-full border border-slate-300 px-3 py-1 text-slate-700 hover:border-lions-navy hover:text-lions-navy">
+          <a href={langHref} className="whitespace-nowrap rounded-full border border-slate-300 px-3 py-1 text-slate-700 hover:border-lions-navy hover:text-lions-navy">
             {t.nav.lang}
           </a>
         </nav>

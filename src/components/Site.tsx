@@ -38,7 +38,7 @@ export function Site({ lang }: { lang: Lang }) {
                 <a href="#about" className="rounded-full border border-white/40 px-6 py-3 font-semibold hover:bg-white/10">{t.hero.cta2}</a>
               </div>
             </div>
-            <div className="mx-auto rounded-2xl bg-white p-4 shadow-xl">
+            <div className="mx-auto hidden rounded-2xl bg-white p-4 shadow-xl md:block">
               <Image src="/lions-emblem.png" alt="Lions International" width={200} height={200} priority />
             </div>
           </div>
