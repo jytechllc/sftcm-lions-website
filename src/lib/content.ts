@@ -23,7 +23,7 @@ export const content = {
       description:
         "旧金山世界中医药总会狮子会是国际狮子会旗下的地方分会，以中医药为特色，开展健康讲座、义诊与社区公益服务。",
     },
-    nav: { about: "关于本会", service: "服务重点", team: "理事会", meetings: "例会", join: "加入我们", lang: "EN", langHref: "/en" },
+    nav: { about: "关于本会", service: "服务重点", meetings: "例会", join: "加入我们", lang: "EN", langHref: "/en" },
     hero: {
       eyebrow: "国际狮子会 · 美国旧金山",
       name: "旧金山世界中医药总会狮子会",
@@ -58,18 +58,6 @@ export const content = {
       lciNote: "本会也参与国际狮子会的全球服务领域，例如视力保护、糖尿病防治、饥饿救助与环境保护。",
       lciLink: "了解国际狮子会的全球服务",
     },
-    team: {
-      title: "理事会",
-      subtitle: "本会首届理事会于 2026 年 10 月 17 日召开第一次会议。",
-      members: [
-        { role: "创会会长", name: "刘雅典娜" },
-        { role: "副会长", name: "梅勇刚" },
-        { role: "秘书长", name: "林杰" },
-        { role: "副秘书长", name: "施蓉" },
-        { role: "高级顾问", name: "吴毅华" },
-      ],
-      more: "完整的理事与委员会名单确认后公布。",
-    },
     meetings: {
       title: "例会",
       items: [
@@ -96,7 +84,7 @@ export const content = {
       description:
         "A Lions International club in San Francisco with a focus on Chinese medicine: health talks, free clinics and community service.",
     },
-    nav: { about: "About", service: "Service", team: "Board", meetings: "Meetings", join: "Join us", lang: "中文", langHref: "/" },
+    nav: { about: "About", service: "Service", meetings: "Meetings", join: "Join us", lang: "中文", langHref: "/" },
     hero: {
       eyebrow: "Lions International · San Francisco, CA",
       name: "San Francisco Global Chinese Medicine Headquarters Lions Club",
@@ -130,18 +118,6 @@ export const content = {
       ],
       lciNote: "We also take part in Lions International's global causes, such as vision, diabetes, hunger and the environment.",
       lciLink: "Lions International's global causes",
-    },
-    team: {
-      title: "Board",
-      subtitle: "The club's founding board first met on 17 October 2026.",
-      members: [
-        { role: "Charter President", name: "Athena Liu" },
-        { role: "Vice President", name: "Yonggang Mei" },
-        { role: "Secretary", name: "Weijing Lin" },
-        { role: "Deputy Secretary", name: "Rong Shi (Liona)" },
-        { role: "Senior Advisor", name: "Yihua Wu" },
-      ],
-      more: "The full board and committee list will be posted once confirmed.",
     },
     meetings: {
       title: "Meetings",

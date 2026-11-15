@@ -20,7 +20,7 @@ export function Site({ lang }: { lang: Lang }) {
   const t = content[lang];
   const tel = `tel:${CONTACT.phone.replace(/[^+\d]/g, "")}`;
   const links = [
-    ["#about", t.nav.about], ["#service", t.nav.service], ["#team", t.nav.team],
+    ["#about", t.nav.about], ["#service", t.nav.service],
     ["#meetings", t.nav.meetings], ["#join", t.nav.join],
   ] as const;
 
@@ -104,17 +104,6 @@ export function Site({ lang }: { lang: Lang }) {
           </p>
         </Section>
 
-        <Section id="team" title={t.team.title} subtitle={t.team.subtitle}>
-          <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-            {t.team.members.map((m) => (
-              <li key={m.role} className="rounded-xl border border-slate-200 p-5">
-                <p className="text-xs font-medium uppercase tracking-wide text-lions-gold-dark">{m.role}</p>
-                <p className="mt-1 text-lg font-semibold text-slate-900">{m.name}</p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-sm text-slate-500">{t.team.more}</p>
-        </Section>
 
         <Section id="meetings" title={t.meetings.title} tint>
           <dl className="grid gap-4 sm:grid-cols-3">
