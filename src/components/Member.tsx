@@ -1,11 +1,12 @@
+import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { auth0 } from "@/lib/auth0";
-import { loginHref, logoutHref } from "@/lib/auth-links";
+import { isWeChat, loginHref, logoutHref } from "@/lib/auth-links";
 import { content, type Lang } from "@/lib/content";
 
 export async function Member({ lang }: { lang: Lang }) {
   const session = await auth0.getSession();
-  if (!session) redirect(loginHref(lang));
+  if (!session) redirect(loginHref(lang, isWeChat((await headers()).get("user-agent"))));
 
   const t = content[lang].auth;
   const u = session.user;
