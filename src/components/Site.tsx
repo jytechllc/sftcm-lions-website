@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { content, type Lang } from "@/lib/content";
+import { CONTACT_EMAIL, content, type Lang } from "@/lib/content";
 
 function Section({ id, title, subtitle, children, tint = false }: {
   id: string; title: string; subtitle?: string; children: React.ReactNode; tint?: boolean;
@@ -117,7 +117,7 @@ export function Site({ lang }: { lang: Lang }) {
         </Section>
 
         <Section id="join" title={t.join.title}>
-          <div className="max-w-2xl">
+          <div className="grid gap-10 md:grid-cols-2">
             <div>
               <p className="leading-relaxed text-slate-700">{t.join.body}</p>
               <ol className="mt-6 space-y-3">
@@ -128,6 +128,10 @@ export function Site({ lang }: { lang: Lang }) {
                   </li>
                 ))}
               </ol>
+            </div>
+            <div className="self-start rounded-2xl bg-lions-navy p-6 text-white">
+              <p className="text-sm text-blue-100">{t.join.contactLabel}</p>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 block break-all text-lg font-bold text-lions-gold hover:underline">{CONTACT_EMAIL}</a>
             </div>
           </div>
         </Section>
