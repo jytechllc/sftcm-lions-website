@@ -69,6 +69,15 @@ export const content = {
       steps: ["发邮件给秘书处，了解本会和会员义务", "旁听一次例会", "由会员推荐，经理事会同意后入会"],
       contactLabel: "秘书处邮箱",
     },
+    auth: {
+      login: "登录",
+      signup: "注册",
+      logout: "退出登录",
+      member: "我的账户",
+      memberTitle: "我的账户",
+      memberBody: "你已登录。会员专区的活动报名、通知等功能正在筹备，开放后会在这里提供。",
+      back: "返回首页",
+    },
     footer: {
       lci: "本会是国际狮子会的会员分会。Lions、Lions International 名称与会徽是国际狮子会的注册商标，经授权供会员分会使用。",
       copy: "旧金山世界中医药总会狮子会",
@@ -129,6 +138,15 @@ export const content = {
       body: "Lions are volunteers who serve their communities. You don't need to work in Chinese medicine; if you share the spirit of \"We Serve\", you're welcome here.",
       steps: ["Email the secretary to learn about the club and what membership involves", "Attend a meeting as a guest", "Join on a member's sponsorship, with board approval"],
       contactLabel: "Email the secretary",
+    },
+    auth: {
+      login: "Log in",
+      signup: "Sign up",
+      logout: "Log out",
+      member: "My account",
+      memberTitle: "My account",
+      memberBody: "You're signed in. Member features such as event sign-up and notices are in preparation and will appear here.",
+      back: "Back to home",
     },
     footer: {
       lci: "This club is a member of Lions International. The Lions and Lions International names and emblem are registered trademarks of Lions Clubs International, used by member clubs under licence.",
