@@ -9,7 +9,10 @@ export function siteMetadata(lang: Lang): Metadata {
     metadataBase: new URL(SITE_URL),
     title: t.title,
     description: t.description,
-    icons: { icon: "/lions-emblem.png" },
+    icons: {
+      icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/icon.png", type: "image/png", sizes: "192x192" }],
+      apple: "/apple-icon.png",
+    },
     alternates: { canonical: lang === "zh" ? "/" : "/en", languages: { "zh-CN": "/", en: "/en" } },
     openGraph: { title: t.title, description: t.description, images: ["/lions-emblem.png"], type: "website" },
   };
