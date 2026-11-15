@@ -108,7 +108,7 @@ export function Site({ lang }: { lang: Lang }) {
             </div>
             <div className="self-start rounded-2xl bg-lions-navy p-6 text-white">
               <p className="text-sm text-blue-100">{t.join.contactLabel}</p>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 block break-all text-lg font-bold text-lions-gold hover:underline">{CONTACT_EMAIL}</a>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 block text-base font-bold text-lions-gold hover:underline sm:text-lg">{CONTACT_EMAIL.split("@")[0]}<wbr />@{CONTACT_EMAIL.split("@")[1]}</a>
             </div>
           </div>
         </Section>
