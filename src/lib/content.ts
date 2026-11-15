@@ -8,7 +8,7 @@
  */
 export type Lang = "zh" | "en";
 
-export const CONTACT_EMAIL = "jytech2023+sftcm-lions@gmail.com";
+export const CONTACT_EMAIL = "jytech202307+sftcm-lions@gmail.com";
 
 export const LCI_CLUB_ID = "200758";
 
