@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CONTACT, content, type Lang } from "@/lib/content";
+import { content, type Lang } from "@/lib/content";
 
 function Section({ id, title, subtitle, children, tint = false }: {
   id: string; title: string; subtitle?: string; children: React.ReactNode; tint?: boolean;
@@ -18,7 +18,6 @@ function Section({ id, title, subtitle, children, tint = false }: {
 
 export function Site({ lang }: { lang: Lang }) {
   const t = content[lang];
-  const tel = `tel:${CONTACT.phone.replace(/[^+\d]/g, "")}`;
   const links = [
     ["#about", t.nav.about], ["#service", t.nav.service],
     ["#meetings", t.nav.meetings], ["#join", t.nav.join],
@@ -118,7 +117,7 @@ export function Site({ lang }: { lang: Lang }) {
         </Section>
 
         <Section id="join" title={t.join.title}>
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="max-w-2xl">
             <div>
               <p className="leading-relaxed text-slate-700">{t.join.body}</p>
               <ol className="mt-6 space-y-3">
@@ -129,10 +128,6 @@ export function Site({ lang }: { lang: Lang }) {
                   </li>
                 ))}
               </ol>
-            </div>
-            <div className="self-start rounded-2xl bg-lions-navy p-6 text-white">
-              <p className="text-sm text-blue-100">{t.join.contactLabel}</p>
-              <a href={tel} className="mt-2 block text-2xl font-bold text-lions-gold hover:underline">{CONTACT.phoneDisplay}</a>
             </div>
           </div>
         </Section>

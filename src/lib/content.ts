@@ -8,12 +8,6 @@
  */
 export type Lang = "zh" | "en";
 
-export const CONTACT = {
-  // Placeholder until the club confirms a public contact (秘书长 Weijing Lin).
-  phone: "+1 415-370-2887",
-  phoneDisplay: "(415) 370-2887",
-};
-
 export const LCI_CLUB_ID = "200758";
 
 export const content = {
@@ -65,13 +59,12 @@ export const content = {
         { k: "地点", v: "旧金山，由理事轮流提供场地，每次例会前通知" },
         { k: "线上参加", v: "出差或不便到场的会员可通过 Zoom 参加" },
       ],
-      note: "欢迎有兴趣的朋友来旁听例会，请先联系秘书处确认时间和地点。",
+      note: "欢迎有兴趣的朋友来旁听例会，请通过本会会员联系秘书处确认时间和地点。",
     },
     join: {
       title: "加入我们",
       body: "狮子会会员是愿意为社区服务的志愿者。无论你是否从事中医药行业，只要认同「我们服务」的精神，都欢迎加入。",
-      steps: ["联系秘书处，了解本会和会员义务", "旁听一次例会", "由会员推荐，经理事会同意后入会"],
-      contactLabel: "秘书处电话",
+      steps: ["通过本会会员联系秘书处，了解本会和会员义务", "旁听一次例会", "由会员推荐，经理事会同意后入会"],
     },
     footer: {
       lci: "本会是国际狮子会的会员分会。Lions、Lions International 名称与会徽是国际狮子会的注册商标，经授权供会员分会使用。",
@@ -126,13 +119,12 @@ export const content = {
         { k: "Where", v: "San Francisco; the venue rotates among board members and is announced before each meeting" },
         { k: "Online", v: "Members who are travelling can join on Zoom" },
       ],
-      note: "Guests are welcome. Please contact the secretary first to confirm the time and place.",
+      note: "Guests are welcome. Please reach the secretary through a club member to confirm the time and place.",
     },
     join: {
       title: "Join us",
       body: "Lions are volunteers who serve their communities. You don't need to work in Chinese medicine; if you share the spirit of \"We Serve\", you're welcome here.",
-      steps: ["Contact the secretary to learn about the club and what membership involves", "Attend a meeting as a guest", "Join on a member's sponsorship, with board approval"],
-      contactLabel: "Secretary",
+      steps: ["Reach the secretary through a club member to learn about the club and what membership involves", "Attend a meeting as a guest", "Join on a member's sponsorship, with board approval"],
     },
     footer: {
       lci: "This club is a member of Lions International. The Lions and Lions International names and emblem are registered trademarks of Lions Clubs International, used by member clubs under licence.",
